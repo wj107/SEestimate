@@ -1,0 +1,31 @@
+#################################################################################
+############## STANDARD ERROR ESTIMATE for predictive models
+#################################################################################
+#-------- Author: wj107
+#-------- Email: 
+#----------------------------------
+#----------- SEestimate function:
+#-----------------------------------------------------------------------------------
+#-------- Input a data frame, specify a response variable, and a train/test split.
+#-------- The SEestimate function will use resampling to approximate the
+#-------- standard error of a model fitted using either GLM or Neural Net (or both).
+#-----------------------------------------------------------------------------------
+#-----------v0.1 has:
+#-------input data, name/distrib of response, # of resamples, train/test split, method of fitting (glm,nn, both), progress bar (y/n)
+#-------stop messages for invalid arguments
+#-------default data if no data frame is supplied
+#-------creates regression formula, coerces all data to numeric, normalized data (for nn models)
+#-------resamples data, creates model, tests model, computes&records standard error approximation, for both GLM/NN
+#-------summarizes&outputs standard error data in list
+
+#-----------v0.1+ needs:
+#-------standardize variable names
+#-------break apart code into sub-functions?
+#-------require certain packages.
+#-------fix text on progress bars
+#-------system.time option for timing model fitting
+#-------visualization options!!
+
+
+
+
