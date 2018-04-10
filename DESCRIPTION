@@ -1,0 +1,12 @@
+Package: SEestimate
+Title: Estimate Standard Errors for Predictive Models
+Version: 0.3
+Authors@R: person("Will", "Johnson", email = "will.johnson@gmail.com", role = c("aut", "cre"))
+Description: For a given data frame and response variable, the se.estimate function will create a predictive model
+	for the function "response ~ ." and test its standard error using k-fold cross-validation.  The function can create either
+	GLM or neural net predictive models for the trials.
+Depends: R (>= 3.4)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

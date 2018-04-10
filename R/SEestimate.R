@@ -6,6 +6,15 @@
 ##pkgs<-c("ggplot2","neuralnet","caTools","boot","plyr")
 ##if(!(require(pkgs,quietly=T))) {stop}
 
+#' Performs k-fold cross-validation on a given data frame and records the standard errors for the k trials.
+#' @param dat data frame
+#' @param pred.var a variable from dat to be used as the response
+#' @return a list containing: (1) a vector of the k standard errors from the trials, (2) a 5-number summary of the standard errors, and
+#'	(3) if specified, a vecotr of the k build times for the trials
+#' @seealso \code{\link{caret}} I only wrote se.estimate since caret wouldn't work on my laptop!
+#' @export
+#' @examples
+#' se.estimate() ##defaults to use diamonds dataset from ggplot2
 #---------------------FUNCTION CALL--------------------------------------
 
 ####define function to compare predictive analysis between GLM and NN:
@@ -32,9 +41,9 @@ se.estimate<-function(
 
 #---------------------CHECK ARGUMENTS-------------------------
 
-##########if no data set is given, default is 2000 row sample of 'diamonds' data set
+##########if no data set is given, default is 200 row sample of 'diamonds' data set
 if(is.null(dat)){
-	index<-sample(nrow(diamonds),2000)
+	index<-sample(nrow(diamonds),200)
 	dat<-diamonds[index,]
 	pred.var<-"price"
 	}

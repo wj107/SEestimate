@@ -1,6 +1,6 @@
 # STANDARD ERROR ESTIMATE for predictive models
 
-### v0.3 -- 9 April 2018
+### v1.0 -- 10 April 2018
 
 #### Author: Will Johnson
 #### Email: will.johnson@gmail.com
@@ -22,7 +22,8 @@ It has come to my attention that SE.estimate performs many of the same things th
 have enough memory to install caret... so I wrote up this function instead!  It works for [my analysis](https://github.com/wj107/495project) and
 has served me well as a good coding exercise, if nothing else.  If anyone else can find some use from it, thumbs up!!
 
-#### v0.2 has:
+#### v1.0 has:
+* Stands on its own two feet as an R package!  WOW!
 * input data, name/distrib of response, # of resamples, train/test split, method of fitting (glm,nn, both), progress bar (y/n)
 * stop messages for invalid arguments
 * default data if no data frame is supplied
@@ -37,5 +38,3 @@ has served me well as a good coding exercise, if nothing else.  If anyone else c
 * require certain packages.
 * fix text on progress bars
 * visualization options!!
-
-Wouldn't it be cool to re-write this function with a formal R help page?  Legitimize this operation!
