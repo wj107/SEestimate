@@ -5,6 +5,8 @@
 #### Author: Will Johnson
 #### Email: will.johnson@gmail.com
 
+----NOTE: there's some issue with the help file for the se.estimate function.  There's work to do!!!---
+
 SE.estimate is an R function that takes as arugments a data frame, a response variable, and specifications about what type of predictive model
 to build (GLM or NN) and what type of cross-validation to perform (train/test splits, _k_-fold CV).  The function then creates _k_ predictive models,
 calculates standard errors based on these models, and then outputs the results as a list containing:
@@ -32,7 +34,7 @@ has served me well as a good coding exercise, if nothing else.  If anyone else c
 * summarizes&outputs standard error data in list
 * option to time how long it takes to create a model!!
 
-#### v0.2+ needs:
+#### v1.0+ needs:
 * standardize variable names
 * break apart code into sub-functions?
 * require certain packages.
